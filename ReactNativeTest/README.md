@@ -9,3 +9,9 @@
 - npm install -g react-native-cli (use node ^4.0.0)
 - react-native init ProjectName
 - react-native run-android
+
+## Next Todos
+
+- Image
+- Event Handler
+- Notification
