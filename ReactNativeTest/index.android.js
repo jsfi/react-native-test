@@ -8,8 +8,9 @@ var React = require('react-native');
 var {
   AppRegistry,
   StyleSheet,
-  Text,
   View,
+  Text,
+  Image,
 } = React;
 
 var ReactNativeTest = React.createClass({
@@ -28,6 +29,7 @@ var ReactNativeTest = React.createClass({
         <Text style={styles.instructions}>
           Shake or press menu button for dev menu
         </Text>
+        <Image source={require('./img/heart.png')} />
       </View>
     );
   }
