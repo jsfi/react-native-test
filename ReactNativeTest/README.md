@@ -12,6 +12,6 @@
 
 ## Next Todos
 
-- Image
-- Event Handler
+- Image ✓
+- Event Handler ✓
 - Notification
