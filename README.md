@@ -15,3 +15,5 @@
 - Image ✓
 - Event Handler ✓
 - Notification
+- request weather-api
+- show status
