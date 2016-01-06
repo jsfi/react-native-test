@@ -11,7 +11,8 @@ let {
     View,
     Text,
     Image,
-    TouchableOpacity
+    TouchableOpacity,
+    AlertIOS
 } = React;
 
 class ReactNativeTest extends React.Component {
@@ -32,6 +33,14 @@ class ReactNativeTest extends React.Component {
                 h: this.state.box.h + 10
             }
         });
+
+        if (this.state.box.w === 150) {
+            AlertIOS.alert('Box size 150', null, [{
+                text: 'OK',
+                onPress: (text) => console.log('OK pressed'),
+                type: 'default'
+            }]);
+        }
     }
 
     render(): ReactElement {
@@ -39,7 +48,7 @@ class ReactNativeTest extends React.Component {
             <View style={styles.container}>
                 <Text style={styles.hello}>Hello World!</Text>
                 <Text style={styles.welcome}>Welcome to React Native!</Text>
-                <Text style={styles.instructions}>To get started, edit index.android.js</Text>
+                <Text style={styles.instructions}>To get started, edit index.ios.js</Text>
                 <Text style={styles.instructions}>Shake or press menu button for dev menu</Text>
                 <Image source={require('./img/heart.png')} />
                 <View style={[styles.box, {
